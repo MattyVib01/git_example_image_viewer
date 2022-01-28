@@ -23,8 +23,10 @@ return true;
 
 
 void BitmapImage::resize(int width, int heigth) {
-    this->width=width;
-    this->height=heigth;
+    if(width>0&&heigth>0) {
+        this->width = width;
+        this->height = heigth;
+    }
 }
 
 BitmapImage::~BitmapImage() {
