@@ -8,6 +8,7 @@ int main() {
     std::string imgName = "test.png";
     if (b.load(imgName))
         std::cout << "show image: " << imgName << std::endl;
+    b.save("test.png");
     else
         std::cerr << "image:" << imgName << " not readable." << std::endl;
     return 0;
