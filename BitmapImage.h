@@ -13,6 +13,8 @@ public:
 
     bool save(std::string name);
 
+    void resize(int width, int heigth);
+
 private:
     int width, height;
     int* buffer;
